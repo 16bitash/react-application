@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import RenderingArrayOfObjects from "./ConditionalJSX";
+import State from "./State";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <RenderingArrayOfObjects />
+    <State />
   </React.StrictMode>
 );
