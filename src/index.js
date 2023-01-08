@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import ObjectsAsState from "./ObjectsAsState";
+import UncontrolledAndControlledInput from "./UncontrolledAndControlledInput";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <ObjectsAsState />
+    <UncontrolledAndControlledInput />
   </React.StrictMode>
 );
