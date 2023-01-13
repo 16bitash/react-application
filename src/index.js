@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Effect2 from "./Effect2";
+import Effect3 from "./Effect3";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Effect2 />
+    <Effect3 />
   </React.StrictMode>
 );
