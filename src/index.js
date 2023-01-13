@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Form from "./Form";
+import Effect2 from "./Effect2";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Form />
+    <Effect2 />
   </React.StrictMode>
 );
