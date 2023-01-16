@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import ReducerHook from "./ReducerHook";
+import ReferenceWithoutNode from "./ReferenceWithoutNode";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <ReducerHook />
+    <ReferenceWithoutNode />
+    <ReferenceWithoutNode />
   </React.StrictMode>
 );

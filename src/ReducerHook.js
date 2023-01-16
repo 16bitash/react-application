@@ -30,15 +30,18 @@ const ReducerHook = () => {
   const [state, dispatch] = useReducer(reducer, 0);
 
   const handleIncreaseClick = () => {
-    dispatch({ type: actionType.INCREASE });
+    const action = { type: actionType.INCREASE };
+    dispatch(action);
   };
 
   const handleDecreaseClick = () => {
-    dispatch({ type: actionType.DECREASE });
+    const action = { type: actionType.DECREASE };
+    dispatch(action);
   };
 
   const changeCount = (count) => {
-    dispatch({ type: actionType.CHANGE_COUNT, payload: count });
+    const action = { type: actionType.CHANGE_COUNT, payload: count };
+    dispatch(action);
   };
 
   return (
