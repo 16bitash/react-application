@@ -1,6 +1,6 @@
 import { useState, createContext, useContext } from "react";
 
-const CountContext = createContext(0);
+const CountContext = createContext();
 
 const Context = () => {
   const [count, setCount] = useState(0);
