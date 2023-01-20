@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class ClassComponent extends Component {
+class Counter extends Component {
   constructor(props) {
     super(props);
 
@@ -39,7 +39,7 @@ class ClassComponent extends Component {
 
   render() {
     if (this.state.count === 5) {
-      throw new Error("Something went wrong");
+      throw new Error("Error");
     }
 
     return (
@@ -51,8 +51,40 @@ class ClassComponent extends Component {
         <div>{this.state.newCount}</div>
         <button onClick={this.increaseNewCount}>Increase</button>
 
-        {this.state.hasError && <div>Something went wrong</div>}
+        <div>My name is {this.props.name}</div>
       </>
+    );
+  }
+}
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      hasError: false,
+    };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <div>Something went wrong</div>;
+    }
+
+    return this.props.children;
+  }
+}
+
+class ClassComponent extends Component {
+  render() {
+    return (
+      <ErrorBoundary>
+        <Counter name="John" />
+      </ErrorBoundary>
     );
   }
 }

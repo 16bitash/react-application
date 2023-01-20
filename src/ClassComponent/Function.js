@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Function = () => {
+const Function = (props) => {
   const [count, setCount] = useState(0);
   const [newCount, setNewCount] = useState(0);
 
@@ -32,6 +32,8 @@ const Function = () => {
 
       <div>{newCount}</div>
       <button onClick={increaseNewCount}>Increase</button>
+
+      <div>My name is {props.name}</div>
     </>
   );
 };
