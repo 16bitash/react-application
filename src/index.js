@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import CustomProvider from "./CustomProvider";
+import Memorize from "./Memorize";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <CustomProvider />
+    <Memorize />
   </React.StrictMode>
 );
